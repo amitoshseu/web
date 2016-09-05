@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Click the button to do a case-insensitiv search for "Amitosh" in a string</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+	function myFunction(){
+		var str = "Amitosh Gain ";
+		var patt1 = /Gain/i;
+		var result = str.match(patt1);
+		document.getElementById("demo").innerHTML = result;
+
+	}
+</script>
+</body>
+</html>

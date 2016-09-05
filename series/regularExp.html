@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Search a string for "Amitosh", and display the position of the match:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var str = "Amitosh Gain";
+		var n = str.search(/Gain/i);
+		document.getElementById("demo").innerHTML = n;
+	}
+</script>
+</body>
+</html>

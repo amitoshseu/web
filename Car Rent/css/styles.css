@@ -1,0 +1,272 @@
+/*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+h1{ 
+	font-size:18px; 
+	color:#d13f31; 
+	font-family: 'Oswald', sans-serif; 
+	font-weight:normal; 
+	text-transform:uppercase;
+}
+
+h2{ 
+	font-size:14px; 
+	color:#1f7872; 
+	font-family: 'Droid Serif', serif; 
+	font-weight:normal;
+}
+a{
+	text-decoration:none; 
+	color:#1f7872;
+}
+
+
+
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+
+.menu-wrap{ 
+	overflow:hidden; 
+	background:#1a202c;
+}
+
+.menu{
+	margin:0 auto; 
+	width:960px; 
+	background:#d13f31; 
+	height:85px; 
+	margin-top:40px;
+}
+
+.menu ul li{
+	list-style:none; 
+	float:left; 
+	width:auto;
+}
+
+.menu ul li a{ 
+	display:block; 
+	height:85px; 
+	line-height:85px; 
+	padding-left:30px; 
+	padding-right:30px; 
+	font-size:14px; 
+	font-family: 'Oswald', sans-serif; 
+	color:#ffffff; 
+	border-right:#dd503f solid 1px; 
+	text-transform:uppercase;
+}
+
+.menu ul li a:hover{
+	background:#e1ece7; 
+	color:#1a202c;
+}
+
+.menu ul li a.active{
+	background:#e1ece7; 
+	color:#1a202c;
+}
+
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header{
+	margin:0 auto; 
+	width:960px; 
+	height:120px;
+}
+.logo{
+	width:300px; 
+	float:left; 
+	line-height:120px;
+}
+
+.logo h1{ 
+	font-size:32px; 
+	color:#d13f31; 
+	font-weight:normal;
+}
+
+.logo h1 span{
+ color:#1a202c;
+}
+
+.social{ 
+	float:right; 
+	margin-top:45px;
+}
+
+.social ul li{
+	list-style:none; 
+	float:left; 
+	margin-left:15px;
+}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner{
+	width:960px; 
+	height:340px; 
+	margin:0 auto; 
+	margin-bottom:60px; 
+	background:url(../images/banner-image.jpg) no-repeat; 
+	position:relative;
+}
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+
+.copyright-wrap{ 
+	background:#1f7872; 
+	overflow:hidden; 
+	padding:15px 0px 15px 0px;
+}
+.copyright-wrap .panel{
+	width:960px; 
+	margin:0 auto; 
+	background:none;
+}
+
+.copyright-wrap .panel .content p{ 
+	color:#ffffff; 
+	text-align:center; 
+	font-size:14px;
+}
+.copyright-wrap .panel .content p a{ 
+	text-decoration:none; 
+	color:#ffffff;
+}
+.copyright-wrap .panel .content p a:hover{ 
+	color:#1a202c;
+}
+
+.copyright-wrap .panel .content .phone p{ 
+	color:#ffffff; 
+	text-align:center; 
+	font-size:30px;
+}
+
+
+
+/*-------------------------------------------------
+CONTUCT US FORM
+-------------------------------------------------*/
+
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+
+
+/*-------------------------------------------------
+GRID CAR IMAGES
+-------------------------------------------------*/
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+}
+ul.rig li {
+	display: inline-block;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 20 20 20px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}

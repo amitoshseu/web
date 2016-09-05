@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "Visit W3Schools!";
+     var patt1 = /w3schools/i;
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

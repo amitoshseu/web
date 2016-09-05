@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regula Expression</title>
+</head>
+<body>
+<p>Click the button to do a global search for at least one "o" in a string</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var str = "Hellooo World! Hello W3schools!";
+		var patt1 = /o+/g;
+		var result = str.match(patt1);
+		document.getElementById("demo").innerHTML = result;
+	}
+</script>
+</body>
+</html>

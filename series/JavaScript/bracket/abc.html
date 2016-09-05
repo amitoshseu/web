@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Click the button to do a global search for the character "h" in a string</p>
+<button onclick="myFunction()">Try it</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var str = "Is this all there is?";
+			var patt1 = /[h]/g;
+			var result = str.match(patt1);
+			document.getElementById("demo").innerHTML = result;
+		}
+	</script>
+</body>
+</html>

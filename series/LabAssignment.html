@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Assignment</title>
+</head>
+<body>
+   
+	<script type="text/javascript">
+	
+	function displayNumber(){
+		var a,str;
+		str = document.getElementById("field1").value;
+		if(isNaN(str)){
+			a = "false"
+		}else{
+			a = "true"
+		}
+	    document.getElementById("label1").innerHTML = a;
+	}
+
+   function displayUppercase(){
+   		var b,str;
+		str = document.getElementById("field2").value;
+		if(/^[A-Z]*$/.test(str)){
+    	 	document.getElementById("label2").innerHTML = "true";
+		}
+		else{
+			document.getElementById("label2").innerHTML = "false";
+		}
+		
+   }
+
+
+	function displayLowercase(){
+   		var str;
+		str = document.getElementById("field3").value;
+		if(/^[a-z]*$/.test(str)){
+    	 	document.getElementById("label3").innerHTML = "true";
+		}
+		else{
+			document.getElementById("label3").innerHTML = "false";
+		}
+		
+   }
+
+</script>
+
+<form>
+	<table id="myTable" table border="0">
+		<tr>
+			<td><label>Input:</label></td>
+			<td><input type="text" name="field1" id="field1"></td>
+			<td><label id="label1"></label></td>
+			<!-- <label for="label1"></label> -->
+		</tr>
+
+		<tr>
+			<td><label>Input:</label></td>
+			<td><input type="text" name="field2" id="field2"></td>
+			<td><label id="label2"></label></td>
+		</tr>
+
+		<tr>
+			<td><label>Input:</label></td>
+			<td><input type="text" name="field3" id="field3"></td>
+			<td><label id="label3"></label></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="Sumbit" value="Check"  onclick="displayNumber(); displayUppercase(); displayLowercase(); "/></td>
+
+		</tr>
+	</table>
+
+</form>
+
+</body>
+</html>
