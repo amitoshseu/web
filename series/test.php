@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 <?php 
-	echo strlen("Hellow World!");
-	echo this is test purpose. 
+	function writeMsg(){
+		echo "Hello world!";
+	}
+	writeMsg();
  ?>
+</body>
+</html>
