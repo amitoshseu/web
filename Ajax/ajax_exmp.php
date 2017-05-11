@@ -7,7 +7,7 @@
 <h3>Start typing a name in the input field below:</h3>
 
 <form action=""> 
-First name: <input type="text" id="txt1" onkeyup="showHint(this.value)">
+  First name: <input type="text" id="txt1" onkeyup="showHint(this.value)">
 </form>
 
 <p>Suggestions: <span id="txtHint"></span></p> 

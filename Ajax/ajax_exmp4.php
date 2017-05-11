@@ -26,11 +26,34 @@
 <body>
 
 <form>
-<select name="users" onchange="showUser(this.value)">
-<option value="">Select a person:</option>
-<option value="1">Amitosh Gain</option>
-<option value="2">Arif Rabbani</option>
-<option value="3">Nezamuddin Rony</option>
+    <!-- <select name="users" onchange="showUser(this.value)">
+    <option value="">Select a person:</option>
+    <option value="1">Amitosh Gain</option>
+    <option value="2">Arif Rabbani</option>
+    <option value="3">Nezamuddin Rony</option>
+ -->
+
+  <select  name="users" onchange="showUser(this.value)">
+  <option value="">Select a person:</option>
+      <?php
+        $con = mysqli_connect('localhost','root','mrgain','ajaxDb');
+        if (!$con) {
+        die('Could not connect: ' . mysqli_error($con));
+        }
+
+
+          $query="select * from user";
+
+          $res=mysqli_query($con,$query);
+          
+          while($row=mysqli_fetch_assoc($res))
+          {
+            echo '<option value="'.$row['id'].'"> '.$row['id']."&emsp;".$row['firstName']." ".$row['lastName'] .' </option>';
+            //PASS ID NOT NAME
+          }
+
+          mysqli_close($con);
+      ?>
 
 </select>
 </form>

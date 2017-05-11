@@ -29,26 +29,29 @@ if (!$con) {
 $sql="SELECT * FROM user WHERE id = '".$q."'";
 $result = mysqli_query($con,$sql);
 
-echo "<table>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-<th>Age</th>
-<th>Hometown</th>
-<th>Job</th>
-</tr>";
-while($row = mysqli_fetch_array($result)) {
-    echo "<tr>";
-    echo "<td>" . $row['firstName'] . "</td>";
-    echo "<td>" . $row['lastName'] . "</td>";
-    echo "<td>" . $row['age'] . "</td>";
-    echo "<td>" . $row['homeTown'] . "</td>";
-    echo "<td>" . $row['job'] . "</td>";
-    echo "</tr>";
-}
-echo "</table>";
-mysqli_close($con);
 ?>
+
+<table>
+    <tr>
+        <th width="20%">First Name</th>
+        <th width="20%">Last Name</th>
+        <th width="10%">Age</th>
+        <th width="30%">Home Town</th>
+        <th width="30%">Job</th>
+    </tr>
+    <?php 
+         while($row = mysqli_fetch_array($result)) { 
+    ?>
+        <tr>
+            <td><?php echo $row['firstName']; ?></td>
+            <td><?php echo $row['lastName']; ?></td>
+            <td><?php echo $row['age']; ?></td>
+            <td><?php echo $row['homeTown']; ?></td>
+            <td><?php echo $row['job']; ?></td>
+        </tr>
+    <?php } ?>
+</table>
+
 
 </body>
 </html>
