@@ -36,7 +36,7 @@
   <select  name="users" onchange="showUser(this.value)">
   <option value="">Select a person:</option>
       <?php
-        $con = mysqli_connect('localhost','root','mrgain','ajaxDb');
+        $con = mysqli_connect('localhost','root','mrgain','web_ajaxDb');
         if (!$con) {
         die('Could not connect: ' . mysqli_error($con));
         }

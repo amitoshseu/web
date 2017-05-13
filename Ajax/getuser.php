@@ -20,7 +20,7 @@ th {text-align: left;}
 <?php
 $q = intval($_GET['q']);
 
-$con = mysqli_connect('localhost','root','mrgain','ajaxDb');
+$con = mysqli_connect('localhost','root','mrgain','web_ajaxDb');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
