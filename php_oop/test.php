@@ -1,20 +1,6 @@
-<?php 
-	class TV{
-		public $model;
-		public $volume;
+<?php
 
-		function volumeUp(){
-			$this->volume++;
-		}
+$name = 'John';
+$age = 20;
 
-		function volumeDown(){
-			$this->volume--;
-		}
-
-		function __construct($m,$v){
-			$this->model = $m;
-			$this->volume = $v;
-		}
-	}
-
- ?>
+echo $name . ' is ' . $age . ' years old';

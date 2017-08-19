@@ -1,4 +1,11 @@
-<html>
-	
-	
-</html>
+<?php 
+	namespace def{
+		class xyz {
+
+		}
+
+		class xyz {
+			
+		}
+	}
+ ?>
