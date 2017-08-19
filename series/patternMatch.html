@@ -1,0 +1,20 @@
+
+<script>
+function demoMatchClick() {
+  var re = new RegExp(document.demoMatch.regex.value);
+  if (document.demoMatch.subject.value.match(re)) {
+    alert("Pattern Matched");
+  } else {
+    alert("Pattern No Matched");
+  }
+}
+</script>
+
+<FORM ID="demoMatch" NAME="demoMatch" METHOD=POST ACTION="javascript:void(0)">
+<P>Pattern: <INPUT TYPE=TEXT NAME="regex" VALUE="^[0]{1}[1]{1}[0-9]{9}$" SIZE=50></P>
+<P>Sample Data: <INPUT TYPE=TEXT NAME="subject" 
+   VALUE="01712345678" SIZE=50></P>
+<P><INPUT TYPE=SUBMIT VALUE="Test Match" ONCLICK="demoMatchClick()">
+
+</FORM>
+
